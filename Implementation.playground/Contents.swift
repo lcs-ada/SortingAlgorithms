@@ -135,6 +135,11 @@ for _ in 1...150 {
             lowestIndex = index
         }
     }
+//move the number to the first index
+numbers.remove(at: lowestIndex)
+//insert it into the new array
+sorted.insert(lowestValue, at: 0)
+
 }
 
 
