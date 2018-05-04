@@ -112,4 +112,29 @@ numbers
  */
 
 // Begin your implementation below...
+for _ in 1...150 {
+    numbers.append( random(between: 1, and: 200))
+}
+//create a new array
+var sorted : [Int] = []
+
+//Print all the values, from first to last
+for number in numbers {
+    print(number)
+}
+
+//make a loop
+for _ in 1...150 {
+    //find the first lowest
+    var lowestValue = 1
+    var lowestIndex = 0
+    
+    for (index, number) in numbers.enumerated() {
+        if number > lowestValue {
+            lowestValue = number
+            lowestIndex = index
+        }
+    }
+}
+
 
